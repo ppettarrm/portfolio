@@ -11,7 +11,7 @@ export default function Education() {
             {"# BSc IT @ Faculty of Sciences"}
         </h1>
         </Link>
-        <Link href={"https://www.etspupin.edu.rs"}>
+        <Link href={"http://www.etspupin.edu.rs"}>
         <h1 className="font-extrabold text-xl hover:scale-105 transition-all">
             {"# CS class @ Electrical High School"}
             <br/>

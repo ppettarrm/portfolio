@@ -6,6 +6,7 @@ import Education from "@/app/(home)/components/Education";
 import Skills from "@/app/(home)/components/Skills";
 import Closing from "@/app/(home)/components/Closing";
 import '../globals.css';
+import Experience from "@/app/(home)/components/Experience";
 
 export default function Page() {
     return (
@@ -22,13 +23,16 @@ export default function Page() {
                 <Navbar />
                 <div className="flex justify-center p-5 min-w-[90%] flex-wrap">
                     <div className="column">
-                        <Skills />
+                        <Skills/>
                     </div>
                     <div className="column">
-                        <Education />
+                        <Education/>
                     </div>
                     <div className="column">
-                        <Projects />
+                        <Experience/>
+                    </div>
+                    <div className="column">
+                        <Projects/>
                     </div>
                 </div>
                 <div className="flex pt-[5rem] justify-center">
