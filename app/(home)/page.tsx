@@ -16,7 +16,7 @@ export default function Page() {
             <title>ppettarrm</title>
             <style>
                 {`
-                .background-circles {
+                .background-rain {
                     position: fixed;
                     top: 0;
                     left: 0;
@@ -24,44 +24,45 @@ export default function Page() {
                     height: 100%;
                     z-index: -1;
                     pointer-events: none;
+                    color: cyan;
                 }
 
-                .circle {
+                .raindrop {
                     position: absolute;
-                    background-color: cyan;
-                    border-radius: 50%;
                     opacity: 0.3;
-                    animation: moveCircle linear infinite alternate;
-                    filter: drop-shadow(0 0 10px cyan) blur(5px) brightness(150%);
+                    animation: fall 5s linear infinite;
                 }
 
-                @keyframes moveCircle {
-                    from {
-                        transform: translate(-50.1423%, -49.3231%);
+                @keyframes fall {
+                    0% {
+                        transform: translateY(-10%) rotate(0deg);
                     }
-                    to {
-                        transform: translate(calc(100vw - 75.32232%), calc(100vh - 65.23123%));
+                    50% {
+                        transform: translateY(300%) rotate(180deg);
+                    }
+                    100% {
+                        transform: translateY(300%) rotate(360deg);
                     }
                 }
                 `}
             </style>
         </head>
         <body className="bg-black text-white">
-        <div className="background-circles">
-            {[...Array(5)].map((_, index) => {
-                const diameter = Math.random() * 100 + 100;
+        <div className="background-rain">
+            {[...Array(25)].map((_, index) => {
                 return (
                     <div
                         key={index}
-                        className="circle"
+                        className="raindrop"
                         style={{
-                            width: `${diameter}px`,
-                            height: `${diameter}px`,
+                            fontSize: `${Math.random() * 20 + 10}px`,
                             top: `${Math.random() * 100}%`,
                             left: `${Math.random() * 100}%`,
-                            animationDuration: `${Math.random() * 20 + 10}s`,
+                            animationDuration: `${Math.random() * 5 + 3}s`,
                         }}
-                    />
+                    >
+                        {`</>`}
+                    </div>
                 );
             })}
         </div>
