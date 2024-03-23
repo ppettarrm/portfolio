@@ -84,7 +84,7 @@ export default function Page() {
                         <Projects/>
                     </div>
                 </div>
-                <div className="flex pt-[5rem] justify-center">
+                <div className="flex pt-[10rem] justify-center">
                     <Closing />
                 </div>
             </div>
