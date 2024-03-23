@@ -55,7 +55,7 @@ export default function Page() {
                             fontSize: `${Math.random() * 20 + 10}px`,
                             top: `${-3}rem`,
                             left: `${Math.random() * 100}%`,
-                            animationDuration: `${Math.random() * 8 + 6}s`, // Slower animation duration
+                            animationDuration: `${Math.random() * 16 + 6}s`, // Slower animation duration
                             animationDelay: `${Math.random() * 3}s` // Add animation delay for randomness
                         }}
                     >
@@ -65,12 +65,12 @@ export default function Page() {
             })}
         </div>
         <div className="min-h-screen p-5">
-            <div className="fixed top-1/3 p-0 m-0 w-10">
+            <div className="fixed top-[30%] p-0 m-0 w-10">
                 <Socials />
             </div>
             <div className="inline mx-auto w-90">
                 <Navbar />
-                <div className="flex justify-center p-5 min-w-[90%] flex-wrap">
+                <div className="flex pt-[8%] justify-center p-5 min-w-[90%] flex-wrap">
                     <div className="column">
                         <Skills/>
                     </div>

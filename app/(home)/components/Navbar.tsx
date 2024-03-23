@@ -7,7 +7,6 @@ export default function Navbar() {
         <div className="min-w-2xl"></div>
         <h1 className=" text-2xl font-bold underline underline-offset-8 decoration-cyan-800 -rotate-2">
             ppettarrm ☕︎
-            <br/><br/><br/><br/><br/><br/><br/>
         </h1>
     </nav>;
 
