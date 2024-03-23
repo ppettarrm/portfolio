@@ -30,18 +30,15 @@ export default function Page() {
                 .raindrop {
                     position: absolute;
                     opacity: 0.3;
-                    animation: fall 5s linear infinite;
+                    animation: fall linear infinite;
                 }
 
                 @keyframes fall {
                     0% {
-                        transform: translateY(-10%) rotate(0deg);
-                    }
-                    50% {
-                        transform: translateY(300%) rotate(180deg);
+                        transform: translateY(0%) rotate(0deg);
                     }
                     100% {
-                        transform: translateY(300%) rotate(360deg);
+                        transform: translateY(100vh) rotate(360deg);
                     }
                 }
                 `}
@@ -56,9 +53,10 @@ export default function Page() {
                         className="raindrop"
                         style={{
                             fontSize: `${Math.random() * 20 + 10}px`,
-                            top: `${Math.random() * 100}%`,
+                            top: `${Math.random() * 0}%`,
                             left: `${Math.random() * 100}%`,
-                            animationDuration: `${Math.random() * 5 + 3}s`,
+                            animationDuration: `${Math.random() * 8 + 6}s`, // Slower animation duration
+                            animationDelay: `${Math.random() * 3}s` // Add animation delay for randomness
                         }}
                     >
                         {`</>`}
