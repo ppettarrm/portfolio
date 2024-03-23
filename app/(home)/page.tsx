@@ -41,7 +41,7 @@ export default function Page() {
                 </div>
             </div>
         </div>
-        <footer className="flex justify-center items-center mb-5"><h1>Copyright © 2000-2024 <Link href={"https://www.github.com/ppettarrm"}>ppettarrm</Link></h1></footer>
+        <footer className="flex justify-center items-center mb-5"><h1>Copyright © 2024 <Link href={"https://www.github.com/ppettarrm"}>ppettarrm</Link></h1></footer>
         </body>
         </html>
     );
