@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Experience() {
     return <div className="justify-center max-w-xl animate-fade-in-right px-10 py-16">
-        <h1 className="font-extrabold text-4xl hover:scale-125 transition-all">
+        <h1 className="font-extrabold text-4xl">
             {"// Experience"}
         </h1>
         <Link href={"https://www.jetbrains.com"}>

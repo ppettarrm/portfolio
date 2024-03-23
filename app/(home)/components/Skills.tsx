@@ -2,20 +2,26 @@ import React from "react";
 
 export default function Skills() {
     return <div className="-rotate-[5deg] hover:rotate-2 justify-center max-w-xl animate-fade-in-right p-[5rem]">
-        <h1 className="font-extrabold text-4xl hover:scale-125 transition-all">
+        <h1 className="font-extrabold text-4xl">
             {"// Skills"}
         </h1>
         <h1 className="font-extrabold text-xl hover:scale-110 transition-all">
-            {"# Kotlin"}
+            {"# Kotlin # Java"}
         </h1>
         <h1 className="font-extrabold text-xl hover:scale-110 transition-all">
-            {"# Java"}
+            {"# Spring Boot"}
         </h1>
         <h1 className="font-extrabold text-xl hover:scale-110 transition-all">
-            {"# Python"}
+            {"# Python # PyTorch"}
         </h1>
         <h1 className="font-extrabold text-xl hover:scale-110 transition-all">
-            {"# etc."}
+            {"# TensorFlow # NumPy"}
+        </h1>
+        <h1 className="font-extrabold text-xl hover:scale-110 transition-all">
+            {"# Pandas # Git"}
+        </h1>
+        <h1 className="font-extrabold text-xl hover:scale-110 transition-all">
+            {"# Windows # Linux"}
         </h1>
     </div>
 }

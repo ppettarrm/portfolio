@@ -37,10 +37,10 @@ export default function Page() {
 
                 @keyframes moveCircle {
                     from {
-                        transform: translate(-50%, -50%);
+                        transform: translate(-50.1423%, -49.3231%);
                     }
                     to {
-                        transform: translate(calc(100vw - 50%), calc(100vh - 50%));
+                        transform: translate(calc(100vw - 75.32232%), calc(100vh - 65.23123%));
                     }
                 }
                 `}
