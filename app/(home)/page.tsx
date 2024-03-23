@@ -7,6 +7,7 @@ import Skills from "@/app/(home)/components/Skills";
 import Closing from "@/app/(home)/components/Closing";
 import '../globals.css';
 import Experience from "@/app/(home)/components/Experience";
+import Link from "next/link";
 
 export default function Page() {
     return (
@@ -40,6 +41,7 @@ export default function Page() {
                 </div>
             </div>
         </div>
+        <footer className="flex justify-center items-center mb-5"><h1>Copyright © 2000-2024 <Link href={"https://www.github.com/ppettarrm"}>ppettarrm</Link></h1></footer>
         </body>
         </html>
     );

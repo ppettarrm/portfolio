@@ -15,7 +15,7 @@ export default function Experience() {
             <h1 className="font-extrabold text-xl hover:scale-105 transition-all">
                 {"# Web Developer @ BarKod"}
                 <br/>
-                {"#Marketing Manager @ BarKod"}
+                {"# Marketing Manager @ BarKod"}
             </h1>
         </Link>
     </div>
