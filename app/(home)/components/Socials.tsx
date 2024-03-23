@@ -29,7 +29,7 @@ export function Socials() {
 
     return <div className="flex">
         <div>
-            <h1 className="rotate-90 mb-[3.5rem]">────</h1>
+            <h1 className="rotate-90 mb-[3.5rem] text-3xl">{"</>"}</h1>
             {socials.map(
                 (social, index) => {
                     const Icon = social.Icon
@@ -38,7 +38,7 @@ export function Socials() {
                     </Link>
                 }
             )}
-            <h1 className="rotate-90 mt-[3.5rem]">────</h1>
+            <h1 className="rotate-90 mt-[3.5rem] text-3xl">{"</>"}</h1>
         </div>
     </div>
 }
