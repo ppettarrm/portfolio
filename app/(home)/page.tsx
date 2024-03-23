@@ -53,7 +53,7 @@ export default function Page() {
                         className="raindrop"
                         style={{
                             fontSize: `${Math.random() * 20 + 10}px`,
-                            top: `${Math.random() * 0}%`,
+                            top: `${-3}rem`,
                             left: `${Math.random() * 100}%`,
                             animationDuration: `${Math.random() * 8 + 6}s`, // Slower animation duration
                             animationDelay: `${Math.random() * 3}s` // Add animation delay for randomness
