@@ -8,13 +8,11 @@ import Closing from "@/app/(home)/components/Closing";
 import '../globals.css';
 import Experience from "@/app/(home)/components/Experience";
 import Link from "next/link";
-import { Analytics } from "@vercel/analytics/react";
 
 export default function Page() {
     return (
         <html>
         <head>
-            <Analytics />
             <title>ppettarrm</title>
             <style>
                 {`

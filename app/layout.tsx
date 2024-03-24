@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import {ThemeProvider} from "@/components/theme-provider";
+import { Analytics } from "@vercel/analytics/react";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
@@ -24,7 +25,9 @@ export default function RootLayout({
           disableTransitionOnChange
       >
         {children}
-      </ThemeProvider></body>
+      </ThemeProvider>
+      <Analytics />
+      </body>
     </html>
   );
 }
